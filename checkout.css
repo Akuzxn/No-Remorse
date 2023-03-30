@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: "Courier New", Courier, monospace;
+}
+
+.hero{
+    width:100%;
+    height: 30vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0));
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wrapper2{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    
+}
+
+
+a {
+    color: #ffff;
+}
+
+.back-video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.content {
+	margin-top: 10vh;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+	min-height: 10vh;
+	margin-top: 10vh;
+}
+.success {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+	/* min-height: 100vh; */
+	margin-top: 5vh;
+	/* space evenly */
+	justify-content: space-evenly;
+	text-align: center;
+	line-height: 2vh;
+}
+.filler {
+	max-height: 100vh;
+	min-height: 5vh;
+}
+.title h1 {
+	font-size: 64px;
+	color: rgb(255, 255, 255);
+}
+
+p{
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+h2{
+    color: white;
+}
+
+.btn {
+	font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+	color: #fbfbfd;
+	background-color: #000000;
+	font-size: small;
+	/* padding: 0.5vw; */
+	padding: 0.8vh;
+	text-decoration: none;
+	border-radius: 15px;
+	/* margin: 1vh; */
+}
+.btn:hover {
+	background-color: #5900ff;
+}
+

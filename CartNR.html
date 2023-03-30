@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> No Remorse: Dont Look Back</title>
+    <link rel="stylesheet" href="CartNR.css">
+    <link rel="icon" href="img_NR/No Remorse Combined Transparent.png" type="img_NR" sizes="" class="icon">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/nav.css" />
+    <link rel="stylesheet" href="../styles/cart.css" />
+    <script src="https://kit.fontawesome.com/f3a312835a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="hero">
+
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="img_NR/no remorse lightning.mp4" type="video/mp4">
+        </video>
+
+
+    </div>
+
+    <nav class="images">
+        <div class="wrapper">
+            
+            <img src="img_NR/No Remorse Combined Transparent.png" alt="" length="80" width="80">
+
+        </div>
+        <div class="wrapper2">
+
+           <!-- placeholder -->
+
+        </div>
+    </nav>
+
+
+        
+            <nav>
+                <div class="nav-content">
+    
+    
+                    <div class="nav-icon">
+                        <div class="bar one"></div>
+                        <div class="bar two"></div>
+                    </div>
+
+    
+                   
+                </div>
+            </nav>
+    
+            <main>
+                <div class="title">
+                    <h1>Cart</h1>
+                </div>
+                <div class="items" id="items"></div>
+                <div class="total" id="total"></div>
+            </main>
+    
+
+
+
+    
+            <script>
+                const navIcon = document.querySelector(".nav-icon");
+                const nav = document.querySelector("nav");
+                navIcon.onclick = function () {
+                    nav.classList.toggle("show");
+                };
+            </script>
+            <script src="../src/cart.js"></script>
+    
+    
+    
+    <script src="./CartNR.js"></script>
+
+
+</body>
+
+
+</html>

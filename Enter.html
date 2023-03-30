@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<title>No Remorse: Dont Look Back</title>
+		<link rel="stylesheet" href="Enter.css" />
+		<link rel="icon" href="img_NR/No Remorse Combined Transparent.png" type="img_NR" />
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+		<meta charset="UTF-8" />
+		
+
+	</head>
+	<body>
+		<div class="blur-box"></div>
+		<div class="sidebar">
+			<div class="logo_content">
+				<div class="logo">
+					<div class="logo_name"><img src="img_NR/No Remorse Text.png" alt="" length="80" width="80" /></div>
+				</div>
+			</div>
+			<ul class="nav_list">
+				<li>
+					<a href="#">
+						<button id="btn"><i class="bx bx-menu"></i></button>
+
+						<span class="tooltip">Menu</span>
+					</a>
+				</li>
+				<li>
+					<i class="bx bx-search"></i>
+					<input type="text" placeholder="Search..." />
+
+					<span class="tooltip">Search</span>
+				</li>
+				<li>
+					<a href="Enter.html">
+						<i class="bx bx-home-alt"></i>
+						<span class="links_name">Home</span>
+					</a>
+					<span class="tooltip">Home</span>
+				</li>
+				<li>
+					<a href="#">
+						<i class="bx bx-user"></i>
+						<span class="links_name">User</span>
+					</a>
+					<span class="tooltip">User</span>
+				</li>
+				<li>
+					<a href="Product.html">
+						<i class="bx bx-grid-alt"></i>
+						<span class="links_name">Products</span>
+					</a>
+					<span class="tooltip">Products</span>
+				</li>
+				<li>
+					<a href="#">
+						<i class="bx bx-chat"></i>
+						<span class="links_name">Support</span>
+					</a>
+					<span class="tooltip">Support</span>
+				</li>
+				<li>
+					<a href="CartNR.html">
+						<i class="bx bxs-cart-add"></i>
+						<span class="links_name">Cart</span>
+					</a>
+					<span class="tooltip"> Shopping Cart</span>
+				</li>
+				<li>
+					<a href="#">
+						<i class="bx bx-cog"></i>
+						<span class="links_name">Settings</span>
+					</a>
+					<span class="tooltip">Dashboard</span>
+				</li>
+				<li>
+					<a href="mapNR.html">
+						<i class="bx bx-map-pin"></i>
+						<span class="links_name">Map</span>
+					</a>
+					<span class="tooltip">Map</span>
+				</li>
+			</ul>
+			<div class="profile_content">
+				<div class="profile">
+					<div class="profile_details"></div>
+				</div>
+			</div>
+		</div>
+		<div class="products-container">
+			<div class="products" id="products"></div>
+			<script src="./Enter.js"></script>
+		</div>
+		<script>
+			let btn = document.querySelector("#btn");
+			let sidebar = document.querySelector(".sidebar");
+			let searchBtn = document.querySelector(".bx-search");
+			let menuBtn = document.querySelector("bx-menu");
+
+			btn.onclick = sidebar.classList.toggle("active");
+			btn.onclick = function () {
+				sidebar.classList.toggle("active");
+			};
+
+			searchBtn.onclick = function () {
+				sidebar.classList.toggle("active");
+			};
+
+			menuBtn.onclick = function () {
+				sidebar.classList.toggle("active");
+			};
+		</script>
+
+		<div class="home_content">
+			<div class="text"></div>
+		</div>
+
+		<div class="hero">
+			<video autoplay loop muted plays-inline class="back-video">
+				<source src="img_NR/no remorse lightning.mp4" type="video/mp4" />
+			</video>
+		</div>
+
+			<!-- Start of ChatBot (www.chatbot.com) code -->
+	<script type="text/javascript">
+		window.__be = window.__be || {};
+		window.__be.id = "642448fdea9fce0007a9c210";
+		(function() {
+			var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+			be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+		})();
+	</script>
+		<!-- End of ChatBot code -->
+
+		<nav class="images">
+			<div class="wrapper">
+				<img src="img_NR/No Remorse Combined Transparent.png" alt="" length="80" width="80" />
+			</div>
+		</nav>
+	</body>
+</html>
