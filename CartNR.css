@@ -180,7 +180,7 @@ main {
 	align-items: center;
 	margin: 25px;
   	width: 350px;
- 	height: 400px;
+ 	height: 200px;
 }
 
 @media (max-width: 960px) {
