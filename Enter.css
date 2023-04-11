@@ -49,6 +49,10 @@ body {
 	background-color: #333333;
 }
 
+script {
+	padding-bottom: 10px;
+}
+
 .sidebar {
 	position: fixed;
 	top: 0;
