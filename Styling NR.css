@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .hero{
@@ -19,11 +19,13 @@
 
 .wrapper{
     display: flex;
-    width: 100%;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
+	width: 100%;
+	z-index: 0;
+	margin-top: 10px;
+	pointer-events: none;
 }
 
 .wrapper2{
