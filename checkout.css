@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-	font-family: "Courier New", Courier, monospace;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	user-select: none;
 }
 
 .hero{
@@ -19,11 +20,13 @@
 
 .wrapper{
     display: flex;
-    width: 100%;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
+	width: 100%;
+	z-index: 0;
+	margin-top: 10px;
+	pointer-events: none;
 }
 
 .wrapper2{
@@ -105,17 +108,37 @@ h2{
 }
 
 .btn {
-	font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
-	color: #fbfbfd;
-	background-color: #000000;
-	font-size: small;
-	/* padding: 0.5vw; */
-	padding: 0.8vh;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
 	text-decoration: none;
-	border-radius: 15px;
-	/* margin: 1vh; */
-}
-.btn:hover {
-	background-color: #5900ff;
-}
-
+	border: 2px solid rgb(255, 255, 255);
+	padding: 10px 20px;
+	font-size: 17px;
+	font-weight: bold;
+	background: transparent;
+	position: relative;
+	transition: all 1s;
+	overflow: hidden;
+  }
+  
+  .btn:hover {
+	color: rgb(0, 0, 0);
+    background-color: white;
+  }
+  
+  .btn::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 0%;
+	top: 0;
+	left: -40px;
+	transform: skewX(45deg);
+	background-color: rgb(255, 255, 255);
+	z-index: -1;
+	transition: all 1s;
+  }
+  
+  .btn:hover::before {
+	width: 160%;
+  }
