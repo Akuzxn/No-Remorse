@@ -40,8 +40,8 @@ let generateItems = () => {
         <h2>${name}</h2>
         <p>$${price * item}</p>
         <p class="amount">Amount: ${search.item === undefined ? 0 : search.item}</p>
-        <a onclick="decrement(${id})" class="btn">Remove from cart</a>
-        <a onclick="addToCart(${id})" class="btn">Add to cart</a>
+        <a onclick="decrement(${id})" class="btn1">Remove from cart</a>
+        <a onclick="addToCart(${id})" class="btn2">Add to cart</a>
         </div>`;
 		})
 		.join(""));
@@ -90,7 +90,7 @@ let generateTotal = () => {
 	if (totalSum === 0)
 		return (total.innerHTML = `
     <p>Nothing in your cart<p>
-    <a href="./Enter.html" class="checkout-button btn" id="checkout-button">To store</a>
+    <a href="./Product.html" class="checkout-button btn" id="checkout-button">To store</a>
     
     `);
 	return (total.innerHTML = `
